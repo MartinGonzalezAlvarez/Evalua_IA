@@ -1,0 +1,31 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos de sistema/temporales
+.DS_Store
+Thumbs.db
+*.log
+*.temp
+*.tmp
+
+# Datos (si son muy grandes y no deben versionarse)
+# Si vas a incluir datasets pequeños, omite esta línea.
+# data/
+
+# Modelos entrenados (si no deben versionarse)
+# models/
+
+# IDE specific files
+.vscode/
+.idea/
