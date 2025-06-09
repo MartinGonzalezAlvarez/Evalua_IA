@@ -1,7 +1,7 @@
 # Repositorio de Evaluación de Competencias en Inteligencia Artificial
 
 <div align="center">
-  </div>
+</div>
 
 ¡Bienvenido/a al repositorio de evaluación de competencias en IA!
 
@@ -27,19 +27,24 @@ Sigue estos pasos para comenzar y entregar tu solución:
 Abre tu terminal y clona este repositorio en tu máquina local:
 
 ```bash
-git clone [https://github.com/tu-usuario/mi-repositorio-evaluacion-ia.git](https://github.com/tu-usuario/mi-repositorio-evaluacion-ia.git)
+git clone https://github.com/tu-usuario/mi-repositorio-evaluacion-ia.git
 cd mi-repositorio-evaluacion-ia
+```
 
-2. Configurar el Entorno Virtual e Instalar Dependencias
+---
+
+### 2. Configurar el Entorno Virtual e Instalar Dependencias
+
 Es altamente recomendado crear un entorno virtual para instalar las dependencias y evitar conflictos con otras instalaciones de Python en tu sistema. Luego, instala las librerías necesarias:
 
-&lt;details>
-&lt;summary>&lt;b>Pasos Detallados para la Configuración del Entorno&lt;/b>&lt;/summary>
+<details>
+<summary><b>Pasos Detallados para la Configuración del Entorno</b></summary>
 
 Para crear y activar tu entorno virtual:
 
-Bash
+**Bash**
 
+```bash
 # Crear el entorno virtual (solo la primera vez)
 python -m venv .venv
 
@@ -47,50 +52,65 @@ python -m venv .venv
 # En Linux/macOS:
 source .venv/bin/activate
 # En Windows (CMD):
-# .venv\Scripts\activate.bat
+.venv\Scripts\activate.bat
 # En Windows (PowerShell):
-# .venv\Scripts\Activate.ps1
+.venv\Scripts\Activate.ps1
+```
+
 Una vez activado el entorno virtual, instala las librerías:
 
-Bash
-
+```bash
 pip install -r entorno/requirements.txt
-Puedes ver la lista completa de paquetes requeridos en entorno/requirements.txt.
+```
 
-&lt;/details>
+Puedes ver la lista completa de paquetes requeridos en `entorno/requirements.txt`.
 
-3. Elegir tu Perfil y Navegar al Caso de Estudio
+</details>
+
+---
+
+### 3. Elegir tu Perfil y Navegar al Caso de Estudio
+
 Este repositorio contiene casos de estudio específicos para diferentes perfiles de IA. Dirígete a la carpeta correspondiente a tu perfil asignado:
 
-Perfil Asignado	Descripción	Carpeta de Acceso
-Programador Junior en Python	Evalúa habilidades fundamentales de Python y conceptos básicos de IA.	perfiles/programador
-Especialista en Datos	Evalúa habilidades en análisis, manipulación de datos y Machine Learning.	perfiles/especialista_datos
-Especialista en IA Generativa	Evalúa conocimientos y habilidades en modelos de IA generativa (LLMs, etc.).	perfiles/especialista_ia_generativa
+| Perfil Asignado                | Descripción                                                                 | Carpeta de Acceso                      |
+|---------------------------------|-----------------------------------------------------------------------------|----------------------------------------|
+| Programador Junior en Python    | Evalúa habilidades fundamentales de Python y conceptos básicos de IA.        | perfiles/programador                   |
+| Especialista en Datos           | Evalúa habilidades en análisis, manipulación de datos y Machine Learning.    | perfiles/especialista_datos            |
+| Especialista en IA Generativa   | Evalúa conocimientos y habilidades en modelos de IA generativa (LLMs, etc.).| perfiles/especialista_ia_generativa    |
 
-Exportar a Hojas de cálculo
 Una vez dentro de tu carpeta de perfil, lee cuidadosamente el README.md específico de ese perfil. Contendrá las instrucciones detalladas de tu caso de estudio, los objetivos específicos y los criterios de evaluación.
 
-4. Desarrollar tu Solución
+---
+
+### 4. Desarrollar tu Solución
+
 Trabaja en los archivos del caso de estudio según las indicaciones del README.md de tu perfil. Recuerda la restricción de tiempo y concéntrate en la calidad y funcionalidad de lo que logres completar.
 
 Te recomendamos hacer git commit de forma regular a medida que avanzas en tu solución.
 
-5. Entregar tu Solución
+---
+
+### 5. Entregar tu Solución
+
 Para entregar tu trabajo, te pedimos que sigas el procedimiento estándar de GitHub de hacer un fork y luego un Pull Request:
 
-&lt;details>
-&lt;summary>&lt;b>Detalles del Proceso de Entrega&lt;/b>&lt;/summary>
+<details>
+<summary><b>Detalles del Proceso de Entrega</b></summary>
 
-Haz un Fork de este repositorio a tu propia cuenta de GitHub. (En la página de GitHub, busca el botón "Fork" en la esquina superior derecha).
-Clona tu fork localmente. Si ya clonaste este repositorio original, deberías añadir tu fork como un nuevo "remote" o, para simplificar, volver a clonar tu fork.
-Crea una nueva rama (branch) para tu solución (ej. git checkout -b solucion-tu-nombre).
-Asegúrate de que todos tus cambios estén comiteados en esta rama antes de subirla.
-Sube tu rama a tu repositorio forkeado: git push origin solucion-tu-nombre.
-Crea un "Pull Request" (PR) desde tu rama en tu fork (ej. solucion-tu-nombre) hacia la rama main de este repositorio original. En la descripción del PR, puedes añadir cualquier comentario relevante sobre tu solución, supuestos o decisiones tomadas.
-[!NOTE]
-Si tienes algún inconveniente con el proceso de Git/GitHub, por favor comunícalo al equipo de evaluación lo antes posible para recibir asistencia.
+1. Haz un Fork de este repositorio a tu propia cuenta de GitHub. (En la página de GitHub, busca el botón "Fork" en la esquina superior derecha).
+2. Clona tu fork localmente. Si ya clonaste este repositorio original, deberías añadir tu fork como un nuevo "remote" o, para simplificar, volver a clonar tu fork.
+3. Crea una nueva rama (branch) para tu solución (ej. `git checkout -b solucion-tu-nombre`).
+4. Asegúrate de que todos tus cambios estén comiteados en esta rama antes de subirla.
+5. Sube tu rama a tu repositorio forkeado: `git push origin solucion-tu-nombre`.
+6. Crea un "Pull Request" (PR) desde tu rama en tu fork (ej. `solucion-tu-nombre`) hacia la rama main de este repositorio original. En la descripción del PR, puedes añadir cualquier comentario relevante sobre tu solución, supuestos o decisiones tomadas.
 
-&lt;/details>
+> [!NOTE]
+> Si tienes algún inconveniente con el proceso de Git/GitHub, por favor comunícalo al equipo de evaluación lo antes posible para recibir asistencia.
 
-✉️ Contacto y Soporte
+</details>
+
+---
+
+✉️ **Contacto y Soporte**  
 Si tienes alguna pregunta o encuentras algún problema durante la evaluación, por favor contacta a [Tu Nombre/Email/Canal de Comunicación].
